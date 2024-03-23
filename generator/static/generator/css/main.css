@@ -1,0 +1,77 @@
+body{
+    background: silver;
+}
+
+aside {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    left: 0;
+    top: 0;
+    float: left;
+    float: left;
+    background: #708090;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #A9A9A9;
+    overflow-y: auto;
+}
+
+aside img {
+    width: 200px;
+    margin-left: 13px;
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: -50px;
+    font-weight: bold;
+    position: relative;
+    right: -60px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+    text-decoration: none;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: red;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+form {
+    margin-left: 30%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+main .custom-link {
+    text-decoration: underline;
+    color: #0000cd;
+    transition: transform .6s ease;
+    transform: scale(1.05);
+}
+
+main .pages {
+    color: #696969;
+}

@@ -1,0 +1,24 @@
+{% extends 'generator/layout.html' %}
+
+{% block title %}
+    Best friend
+{% endblock %}
+
+{% block content %}
+    <div class="main container" style="font-family: Arial, Helvetica, sans-serif;">
+        <h1 style="margin-left: 15%;">Chat</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <lable for="exampleFormControlTextarea1" class="form-label">Enter your request</lable>
+                <textarea name="input_text" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Request"></textarea>
+            </div>
+            <input type="submit" class="btn btn-success" value="Submit"><br><br>
+            {% if summarizer_ans %}
+            <div class="ans">
+                <textarea name="input_text" class="form-control" rows="2" placeholder="Answer" readonly>{{ summarizer_ans }}</textarea>
+            </div>
+            {% endif %}
+        </form>
+    </div>
+{% endblock %}
